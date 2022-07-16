@@ -1,0 +1,77 @@
+/* Customizing the navigation bar */
+.navbar{
+    overflow: hidden;
+    background: #3e4a61;
+    font-family: Comic;
+}
+
+
+/* Using CSS to align the vavigation bar links to the top left of the page */
+
+.navbar a {
+    /* the property float took all the a tags connected to the nav bar and floated them to the top left */
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Dropdown container customization */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* DropDown Button Customization */
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    padding: 14px 16px;
+    /* inherit is used to keep the same background color as the navbar (in this instance) */
+    background: inherit;
+    font-family: inherit;
+    /* this is important for vertical alignment on mobile phones */
+    margin: 0; 
+}
+
+/* This is the customization for the background color to the navbar links this will be their hover effect */
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background: #c24d2c;
+}
+
+/*  Customizing the dropdown content links to be hidden */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Editing the links inside of the dropdown menu */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* This is to add the background color to the links when the user hovers over it */
+
+.dropdown-content a:hover {
+    background: #d9dad7;
+}
+
+/* This will display the links inside the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
